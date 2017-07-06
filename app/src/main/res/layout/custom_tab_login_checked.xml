@@ -9,5 +9,11 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="LOGIN"
-        android:textColor="#FFF4F4F4"/>
+        android:textColor="#fff"/>
+   <View
+       android:background="#fff"
+       android:layout_alignParentBottom="true"
+       android:layout_width="match_parent"
+       android:layout_height="10dp">
+   </View>
 </RelativeLayout>

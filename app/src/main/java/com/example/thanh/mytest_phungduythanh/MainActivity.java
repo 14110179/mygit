@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     public void onTabChanged(String tabId) {
 
         int selectPage=mTabHost.getCurrentTab();
+        mTabHost.getTabWidget().getChildAt(selectPage)
         viewPager.setCurrentItem(selectPage);
     }
 

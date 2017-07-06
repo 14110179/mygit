@@ -52,6 +52,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="15 min ago"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:gravity="center"/>
             </LinearLayout>
         </RelativeLayout>
@@ -73,13 +75,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLines="2"
+            android:ellipsize="end"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget"/>
         <LinearLayout
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="@color/While"
             android:orientation="horizontal"
-            android:weightSum="3"
             android:layout_width="match_parent"
             android:layout_height="40dp">
             <TextView

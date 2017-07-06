@@ -36,5 +36,6 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
     compile 'com.github.goka.blurredgridmenu:blurredgridmenu:1.0.2'
+    compile 'com.github.Yalantis:GuillotineMenu-Android:1.2'
     testCompile 'junit:junit:4.12'
 }

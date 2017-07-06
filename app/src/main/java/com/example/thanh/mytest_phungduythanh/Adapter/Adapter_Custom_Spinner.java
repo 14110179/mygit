@@ -39,7 +39,7 @@ public class Adapter_Custom_Spinner extends ArrayAdapter<dlCustomSpinner> {
         return getCustomView(position, convertView, parent);
     }
 
-    // This funtion called for each row ( Called data.size() times )
+
     public View getCustomView(int position, View convertView, ViewGroup parent) {
 
         Adapter_Custom_Spinner.ViewHolder viewHolder;

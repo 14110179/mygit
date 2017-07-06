@@ -38,6 +38,7 @@ import com.example.thanh.mytest_phungduythanh.Fragment.Settings;
 import com.example.thanh.mytest_phungduythanh.R;
 import com.goka.blurredgridmenu.GridMenu;
 import com.goka.blurredgridmenu.GridMenuFragment;
+import com.yalantis.guillotine.animation.GuillotineAnimation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,7 @@ public class Recipes_9 extends AppCompatActivity {
     private RelativeLayout layout;
     private Toolbar toolbar;
     private NavigationView navigationView;
-    private ImageView imgMore;
+    private ImageView imgMore,imgMenu90;
     private DrawerLayout drawerLayout;
     private Spinner spinner;
     private Adapter_Custom_Spinner adapter_custom_spinner;
@@ -54,6 +55,8 @@ public class Recipes_9 extends AppCompatActivity {
 
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private GridMenuFragment gridMenuFragment;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +89,7 @@ public class Recipes_9 extends AppCompatActivity {
             }
         };
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
-        /*imgMenu.setOnClickListener(new View.OnClickListener() {
+       /* imgMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                drawerLayout.openDrawer(Gravity.LEFT);
@@ -105,6 +108,16 @@ public class Recipes_9 extends AppCompatActivity {
         setDlCustomSpinnerArrayList();
         adapter_custom_spinner=new Adapter_Custom_Spinner(getBaseContext(),dlCustomSpinnerArrayList);
         spinner.setAdapter(adapter_custom_spinner);
+
+
+
+        View layout_menu13=inflater.inflate(R.layout.layout_menu13,null);
+        drawerLayout.addView(layout_menu13);
+        new GuillotineAnimation.GuillotineBuilder(layout_menu13, layout_menu13.findViewById(R.id.img_menu13), imgMenu90)
+                .setStartDelay(2)
+                .setActionBarViewForAnimation(toolbar)
+                .setClosedOnStart(true)
+                .build();
 
 
     }
@@ -154,6 +167,7 @@ public class Recipes_9 extends AppCompatActivity {
         imgMore=(ImageView)findViewById(R.id.img_more);
         drawerLayout=(DrawerLayout)findViewById(R.id.drawerLayout);
         spinner=(Spinner)findViewById(R.id.spinner_toolbar);
+        imgMenu90=(ImageView)findViewById(R.id.img_menu13_90);
     }
     private void configureToolbar() {
         setSupportActionBar(toolbar);
